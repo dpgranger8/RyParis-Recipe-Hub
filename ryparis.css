@@ -1,0 +1,64 @@
+:root {
+    --navbarColor: #f1a536;
+    --extraMenuColor: #dadfea;
+}
+
+body {
+    font-size: "20px";
+    font-weight: bolder;
+}
+
+.logo {
+    transform: scale(0.5);
+}
+
+#topnav {
+    position: sticky;
+    top: 0;
+    background-color: var(--navbarColor);
+    z-index: 2;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#topnav a {
+    float: left;
+}
+
+/* Primary flex component that powers HStack and VStack */
+.flex {
+    --spacing: 4px;
+    --direction: row;
+    --align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--align);
+    flex-direction: var(--direction);
+}
+
+/* Adjusts spacing of all (immediate) inner children */
+.flex > * + * {
+    margin-left: var(--spacing);
+}
+
+/* Horizontally stack items in a line. */
+.hstack {
+    --direction: row;
+}
+
+/* Vertically stack items on top of each other. */
+.vstack {
+    --align: stretch;
+    --direction: column;
+}
+
+/* Adjusts spacing for vertically stacking items. */
+.vstack > * + * {
+    margin-left: unset;
+    margin-top: var(--spacing);
+}
+
+/* A spacer takes up space between items */
+.spacer {
+    flex: 1;
+}
