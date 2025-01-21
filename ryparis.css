@@ -5,8 +5,11 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: "20px";
     font-weight: bolder;
+    margin: 0 auto;
 }
 
 .logo {
@@ -16,13 +19,13 @@ body {
 .topnav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     background-color: var(--navbarColor);
     z-index: 2;
-    margin: -1rem;
-    height: 4rem;
+    height: 5rem;
+    padding-right: 4rem;
 }
 
 .topnav a {
@@ -30,4 +33,20 @@ body {
     font-size: small;
     color: black;
     padding: 0rem 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 2px;
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+}
+
+.herospan {
+    transform: translateY(50px);
+    background-color: white;
+    padding: 0.75rem;
 }
