@@ -167,3 +167,19 @@ sub {
 #pizzasPic {
     background-image: url(../Images/diffPizzas.jpg);
 }
+
+.bottomNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbarColor);
+    height: 5rem;
+    padding: 0rem 5rem;
+}
+
+.bottomNav a {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    padding-left: 1rem;
+}
