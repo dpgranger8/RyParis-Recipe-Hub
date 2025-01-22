@@ -1,7 +1,8 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
     --navbarColor: #f1a536;
-    --extraMenuColor: #dadfea;
+    --lightBlueColor: #dadfea;
+    --heroPx: 400px;
 }
 
 body {
@@ -39,14 +40,114 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: var(--heroPx);
     margin-top: 2px;
-    background-image: url("hero-image.jpg");
+    background-image: url(../Images/hero-image.jpg);
     background-size: cover;
 }
 
 .herospan {
-    transform: translateY(50px);
+    transform: translateY(120px);
     background-color: white;
-    padding: 0.75rem;
+    padding: 0.5rem;
+    font-size: 25px;
+}
+
+.everyday {
+    background-color: whitesmoke;
+    height: auto;
+    padding: 1.5rem 5rem;
+}
+
+p {
+    font-weight: lighter;
+    letter-spacing: .02rem;
+}
+
+sub {
+    letter-spacing: .02rem;
+}
+
+.everydayMeals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mealItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+}
+
+.mealItem :first-child {
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    margin-top: 1.5rem;
+}
+
+.mealItem :nth-child(2) {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#breakfastPic {
+    background-image: url(../Images/breakfast-ideas.jpg);
+}
+
+#lunchPic {
+    background-image: url(../Images/vegetarian-ideas.jpg);
+}
+
+#dinnerPic {
+    background-image: url(../Images/cold-weather-dinners.jpeg);
+}
+
+.recipes {
+    background-color: var(--lightBlueColor);
+    height: auto;
+    padding: 2rem 5rem;
+}
+
+.recipesOfWeek {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+}
+
+.recipeItem :first-child {
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    margin-top: 1.5rem;
+}
+
+.recipeItem :nth-child(2) {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#fajitaPic {
+    background-image: url(../Images/fajita-peppers.jpeg)
+}
+
+#muffinPic {
+    background-image: url(../Images/muffins.jpeg)
+}
+
+#parmesanPic {
+    background-image: url(../Images/eggplant-parmesan.jpg)
+}
+
+#pizzaPic {
+    background-image: url(../Images/pizza.jpeg)
 }
